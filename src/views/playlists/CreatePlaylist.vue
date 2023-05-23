@@ -52,7 +52,6 @@ export default {
             })
 
             if(!error.value){
-              console.log("playlist added")
                  router.push({name: "PlaylistDetails", params: {id: res.id}})
             }
         } else{

@@ -24,7 +24,7 @@ export default {
         const handleSubmit = async ()=> {
            const res = await signup(email.value, password.value, displayName.value)
            if(res){
-                console.log("user signed up successfully")
+                
                  router.push({name: "UserPlaylist"})
            }
         }

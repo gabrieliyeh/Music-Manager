@@ -92,6 +92,7 @@ export default {
     min-height: 100%;
     max-width: 200%;
     max-height: 200%;
+    object-fit: cover;
   }
   .playlist-info {
     text-align: center;

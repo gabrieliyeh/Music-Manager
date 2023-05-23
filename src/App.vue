@@ -1,11 +1,14 @@
 <template>
-  <Navbar/>
+<Suspense>
+  <Navbar :route="route"/>
+</Suspense>
 <div class="content" >
   <router-view/>
 </div>
 </template>
 
 <script>
+import { useRoute } from 'vue-router';
 import Navbar from "./components/navbar/Navbar.vue";
 
 export default {
@@ -13,10 +16,10 @@ export default {
     Navbar
   },
   setup(){
-    
+    const route = useRoute()
+    return {route}
   }
 }
-
 </script>
 
 <style>

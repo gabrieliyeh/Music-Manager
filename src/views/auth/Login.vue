@@ -33,7 +33,6 @@ export default {
       const handleSubmit= async ()=>{
          await login(email.value, password.value)
         if(!error.value){
-          console.log("user logged in")
           router.push({name: "UserPlaylist"})
         }
 
