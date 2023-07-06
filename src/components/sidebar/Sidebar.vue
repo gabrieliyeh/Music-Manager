@@ -76,11 +76,9 @@ export default {
   display: flex;
   flex-direction: column;
   height: 100%;
-  gap: 40px;
-  padding: 10px;
+  padding: 40px;
+  gap: 60px;
   justify-content: center;
-  max-width: 300px;
-  width: 100%;
   background: white;
 }
 .links {
@@ -88,8 +86,9 @@ export default {
   flex-direction: column;
   height: 100%;
   gap: 40px;
-  align-items: center;
-  justify-content: center;
+ align-items: center;
+
+
 }
 svg {
   cursor: pointer;
